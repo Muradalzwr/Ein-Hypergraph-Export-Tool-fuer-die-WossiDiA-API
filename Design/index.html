@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Export Graph using Java</title>
+    <script src="https://unpkg.com/cytoscape@3.21.0/dist/cytoscape.min.js"></script>
+    <script src="https://unpkg.com/cytoscape-graphml@1.0.1/cytoscape-graphml.min.js"></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <aside>
+      <h2>Get graph with parameters</h2>
+      <div class="inputs">
+        <label>Start node</label>
+        <input type="text" id="startnode" required />
+      </div>
+      <div>
+        <div class="inputs">
+          <label>node Condition</label>
+          <input type="text" id="nodecon" />
+        </div>
+        <div class="inputs">
+          <label>edge role</label>
+          <input type="text" id="edgerole" />
+        </div>
+      </div>
+      <div class="btns">
+        <button id="addroles">Add to table</button>
+      </div>
+
+      <div class="roles">
+        <table border="3">
+          <th>remove</th>
+          <th>node Condition</th>
+          <th>edge role</th>
+          <th>Add</th>
+          <tbody id="roles"></tbody>
+        </table>
+      </div>
+      <div class="btns">
+        <button id="getgraph">Get Graph</button>
+      </div>
+      <div class="btns">
+        <button id="dowmloaded">export to graphml</button>
+      </div>
+    </aside>
+    <main>
+      <div id="cx" class="cx"></div>
+      <div class="info">
+        <div class="nodeinfo">
+        <table border="3">
+            <th>Nodeid</th>
+            <th>Signature</th>
+            <th>Type</th>
+            <th>Attributes</th>
+            <tbody id="Nodesinfo"></tbody>
+          </table>
+
+        </div>
+        <div class="edgeinfo">
+
+          <table border="3">
+            <th>edgeid</th>
+            
+            <th>Type</th>
+            <th>Links</th>
+            <tbody id="Edgesinfo"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
