@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+header {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+header button {
+  width: 50%;
+  padding: 5px;
+  font-size: 22px;
+}
+main {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+main section {
+    background-color: aqua;
+    height: 80vh;
+
+}
+
+.add{
+  width: 25px;
+}
+
+.delete{
+  width: 25px;
+}
+.submit{
+  width: 1000px;
+ 
+}

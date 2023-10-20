@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <key id="edge_label_key" for="edge" attr.name="EdgeLabel" attr.type="string"/>
+    <key id="key0" for="node" attr.name="label" attr.type="string"/>
+    <key id="key1" for="node" attr.name="signature" attr.type="string"/>
+    <key id="key6" for="edge" attr.name="type" attr.type="string"/>
+    <key id="key3" for="edge" attr.name="id" attr.type="string"/>
+    <key id="key4" for="edge" attr.name="sourceid" attr.type="string"/>
+    <key id="key5" for="edge" attr.name="targetid" attr.type="string"/>
+    <graph edgedefault="directed">
+        <node id="170002642">
+            <data key="key0">170002642</data>
+            <data key="key1">XMD-D030-000-002-642</data>
+        </node>
+        <node id="290000002">
+            <data key="key0">290000002</data>
+            <data key="key1">XMD-S001-000-000-002</data>
+        </node>
+        <edge source="290000002" target="170002642">
+            <data key="edge_label_key">[391238] 290000002 -&gt; 170002642</data>
+            <data key="key6">{"1028":"story_transcription"}</data>
+            <data key="key3">391238</data>
+            <data key="key4">290000002</data>
+            <data key="key5">170002642</data>
+        </edge>
+    </graph>
+</graphml>

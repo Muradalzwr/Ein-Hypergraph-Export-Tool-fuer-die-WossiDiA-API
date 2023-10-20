@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Graph Visualization with Cytoscape.js</title>
+    <script src="https://unpkg.com/cytoscape@3.21.0/dist/cytoscape.min.js"></script>
+    <script src="https://unpkg.com/cytoscape-graphml@1.0.1/cytoscape-graphml.min.js"></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <label for=""> root node(start node)</label>
+        <input id="url" type="text"  style="width: 60%;"/>
+        <cond for=""> node[cond]</cond>
+        <input id="cond" type="text" />
+      </div>
+    
+   
+      <div>
+        <label for=""> in-role</label>
+        <input id="inrole" type="text" />
+        <label for=""> out-role</label>
+        <input id="outrole" type="text" />
+         <button style="width: 30px;" onclick="addorles()">+</button>
+      </div>
+      <div>
+<table border="2" style="text-align: center;">
+  <th>in role</th>
+  <th>out role</th>
+  <th>Remove</th>
+<tbody id="roles">
+
+</tbody>
+</table>
+
+      </div>
+    </div>
+    
+    <div>
+      <div>
+        <button onclick="getgraph()">get Graph</button>
+      </div>
+    </header>
+    <div id="cy" style="height: 80vh;"></div>
+    <div id="loaded">
+
+
+    </div>
+<div>
+  <button id="downloadButton">Export AS GraphML</button>
+
+</div>
+  
+
+  
+
+    <script src="scripts.js">
+     
+    </script>
+  </body>
+</html>
